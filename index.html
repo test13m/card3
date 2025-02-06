@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+
+.panel4 {
+    margin-top: 200px;
+  position: relative;
+
+  &:hover {
+    .card {
+      filter: blur(1.5px);
+    }
+    .card14 {
+      background-size: 100% 100%;
+    }
+    .title4 {
+      color: rgba(255, 255, 255, 0.2);
+    }
+    .border4 {
+      border: 1px solid rgba(255, 255, 255, 1);
+    }
+    .slide4 {
+      bottom: 0px;
+    }
+    .ring4:before,
+    .ring4:after {
+      transform: translateX(-50%) translateY(-50%) rotate(310deg);
+    }
+  }
+}
+
+.ring4,
+.card4,
+.border4,
+.slide4,
+.line4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.ring4 {
+  color: #000000;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  font-size: 170px;
+}
+
+.card4 {
+  background: #f0ead6;
+  position: relative;
+  transition: all 1s;
+  height: 250px;
+  width: 230px;
+  border: 1px solid rgba(255, 255, 255, 1);
+}
+
+.card14 {
+    background-image: linear-gradient(to bottom, rgba(69, 67, 67, 0.7), transparent), 
+    url("assets/img/nextjs.gif");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-color: #000000;
+}
+
+.ring4:before,
+.ring4:after {
+  content: "";
+  padding: 0.7em 0.4em;
+  position: absolute;
+  left: 50%;
+  width: 115%;
+  top: 50%;
+  display: block;
+  border: 5px solid #50c9c3;
+  border-radius: 50%;
+  transition: transform 1s;
+  transform: translateX(-50%) translateY(-50%) rotate(50deg);
+}
+
+.ring4:before {
+  border-color: rgb(0, 221, 255) rgb(0, 221, 255) rgba(0, 0, 0, 0)
+    rgba(0, 0, 0, 0);
+  z-index: -1;
+}
+
+.ring4:after {
+  border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgb(0, 221, 255)
+    rgb(0, 221, 255);
+}
+
+.title4 {
+  font-size: 36px;
+  font-weight: 700;
+  transition: all 1s;
+  top: 0;
+  color: #ffffff;
+  text-align: center;
+  position: absolute;
+  font-family: "Playfair Display";
+}
+
+.para4 {
+  bottom: 0;
+  font-size: 16px;
+  font-family: "Raleway";
+  padding: 20px;
+  margin: 0;
+  text-align: center;
+  color: #fff;
+}
+
+.border4 {
+  position: absolute;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  height: 240px;
+  width: 220px;
+  transition: border 1s;
+  overflow: hidden;
+}
+
+.slide4 {
+  height: 240px;
+  width: 220px;
+  position: absolute;
+  border: 1px solid black;
+  bottom: -270px;
+  background: rgba(0, 0, 0, 0.681);
+  transition: bottom 1s;
+  flex-direction: column;
+}
+
+.fa-plane4 {
+  font-size: 16px;
+}
+   </style>
+</head>
+<body>
+        <div class="panel4">
+          <div class="ring4">
+            <div class="card4 card14"></div>
+            <div class="border4">
+              <p class="title4">Next.js</p>
+              <div class="slide4">
+                <h6 class="para4">I provide full-stack Next.js development, creating fast, scalable, and SEO-friendly websites. From dynamic web apps to custom APIs, I build seamless user experiences with modern technologies and best practices.</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+</body>
+</html>
